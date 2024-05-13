@@ -235,6 +235,9 @@ li{
 .sub-header {
   height: 50vh!important;
   width: 100%!important;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/pexels-pixabay-256559.jpg);
+  background-position: center top!important;
+  background-size: cover!important;
   color: #fff!important;
   display: flex;
   align-items: flex-start;
@@ -307,10 +310,10 @@ h3{
 /* contact page */
 
 .contact h1 {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 80%; /* adjust the width as needed */
   text-align: center;
-  border-bottom: 2px solid #8b0303;
+  /* border-bottom: 2px solid #8b0303; */
 }
 
 .contact p {
@@ -334,7 +337,7 @@ h3{
 }
 
 .contact-col {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -375,5 +378,3 @@ h3{
   display: block;
   margin-left: auto;
 }
-
-
