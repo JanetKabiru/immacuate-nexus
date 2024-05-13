@@ -1,0 +1,129 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %} 
+{% include 'navbar.html' %}
+
+<style>
+  .about-landing{
+    margin: 100px auto;
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("{% static 'images/study-group-african-people_23-2149156431.jpg' %}");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+  }
+</style>
+
+
+<section>
+  <div class="about-landing">
+    <h2 class="about-landing-title">
+      <!-- <div class="row">
+        <div class="container"></div>
+        <div class="container"></div>
+        <div class="container"></div>
+      </div> -->
+    </h2>
+  </div>
+</section>
+
+<!-- --about us-- -->
+<section>
+  <div class="container">
+  <h2 style="text-align: center;">About Us</h2>
+  <p style="text-align: center;">
+    Welcome to Immaculate Nexus Training College, where we strive to provide
+    innovative education solutions for the leaders of tomorrow. Immaculate Nexus
+    Training College is registered by the Technical and Vocational Education
+    Training Authority (TVET Authority). Our programmes are examined by
+    internationally and nationally recognized bodies like: KNEC, KASNEB, ICM
+    (UK), City & Guilds (UK), CSK, ABMA (UK) and NITA. There are four intakes
+    per year that is; in January, May, July and September.
+  </p><br> <br> <br>
+</div>
+</section>
+
+<!-- --MISSION-- -->
+<style>
+  .container-mission{
+  border-radius: 10px;
+  text-align: center;
+  padding: auto 50px;
+}
+
+</style>
+
+<section>
+  <div class="row" style="height: 40vh">
+    <div class="col"></div>
+    <div class="col-md-3" >
+      <div class="container-mission" style="background-color: #e7dcdc; height: 40vh;">
+      <h4>OUR VISION</h4>
+      <p>Empowering tomorrow</p>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="container-mission" style="background-color: #e7dcdc; height: 40vh;">
+      <h4>OUR MISSION</h4>
+      <p>Empowering tomorrow</p>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="container-mission" style="background-color: #e7dcdc; height: 40vh;">
+      <h4>OUR CORE VALUES</h4>
+      <p>Empowering tomorrow</p>
+    </div>
+    </div>
+    <div class="col"></div>
+  </div><br> <br> <br>
+</section>
+
+
+
+<!-- --- students life--- -->
+
+<section class="student-life">
+  <div class="containe text-center">
+    <br />
+    <br />
+    <h1>Student Life</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-3 mb-2 mb-lg-0">
+        <h3>Residential Life</h3>
+        <p>
+          At Immaculate Nexus, we believe that the residential experience is an
+          essential part of the college journey. Our on-campus housing options
+          provide students with a comfortable and supportive living environment,
+          fostering a sense of community and belonging.
+        </p>
+        <br />
+      </div>
+      <div class="col-md-3 mb-2 mb-lg-0">
+        <h3>Student Organizations</h3>
+        <p>
+          Our vibrant campus life is enhanced by a wide array of student
+          organizations, ranging from academic clubs and honor societies to
+          cultural groups and recreational teams. These organizations offer
+          students opportunities to explore their interests, develop leadership
+          skills and engage with their peers.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-3 mb-2 mb-lg-0">
+        <h3>Academic Support</h3>
+        <p>
+          At Immaculate Nexus, we are committed to supporting our students'
+          academic success. Our comprehensive academic support services include
+          tutoring, writing workshops, peer mentoring and faculty office hours,
+          ensuring that each student has the resources they need to thrive.
+        </p>
+      </div>
+    </div>
+  </div><br> <br> <br>
+</section>
+
+
+{% include 'footer.html' %} {% endblock %}

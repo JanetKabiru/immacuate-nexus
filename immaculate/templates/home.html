@@ -1,0 +1,294 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% include 'navbar.html' %}
+
+  <section class="hero">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'images/library.jpg' %}" class="d-block w-100" alt="...">
+          <div class="carousel-container">
+            <div class="carousel-topics container">
+              <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
+              <p>MAY 2024 INTAKE ONGOING</p>
+              <div>
+                <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/computer lab.jpg' %}" class="d-block w-100" alt="...">
+            <div class="carousel-container">
+              <div class="carousel-topics container">
+                <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
+                <p>MAY 2024 INTAKE ONGOING</p>
+                <div>
+                  <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'images/study-group-african-people_23-2149156387.jpg' %}" class="d-block w-100" alt="...">
+              <div class="carousel-container">
+                <div class="carousel-topics container">
+                  <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
+                  <p>MAY 2024 INTAKE ONGOING</p>
+                  <div>
+                    <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/pexels-pixabay-159213.jpg' %}" class="d-block w-100" alt="...">
+                <div class="carousel-container">
+                  <div class="carousel-topics container">
+                    <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
+                    <p>MAY 2024 INTAKE ONGOING</p>
+                    <div>
+                      <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+  </section>
+
+  <!-- --about us-- -->
+  <style>
+    .about-section h5 {
+    list-style-type: disc;
+    }
+    </style>
+  <section class="about-section bg-light pt5-pb-5 text-white">
+    <div class="container" style="background-color: #8e2424;">
+    <div class="row">
+      <div class="col-md-6 left-info">
+          <div class="heading">
+            <h2 class="fw-bold pb-5">Empowering tomorrow</h2>
+          </div>
+          <h5>Holistic Education</h5>
+          <p style="text-align: justify;">Our programs blend theoretical knowledge with<br> practical applications, empowering students to <br>tackle real-world challenges</p>
+          <h5>Future-Ready
+            Skills
+            </h5>
+          <p style="text-align: justify;">We equip students with the 
+            essential skills and tools<br>
+            needed to thrive in the
+            rapidly evolving job market.</p>
+            <h5>Transformative
+              Experience              
+              </h5>
+            <p style="text-align: justify;">Through our immersive
+              learning environment,<br>
+              students embark on a
+              transformative journey of<br>
+              personal and professional
+              growth.</p>
+            <div>
+              <br>
+              <button class="btn btn-outline-light">Read More <i class="bi bi-arrow-right-circle-fill"></i></button>
+            </div>
+      </div>
+      <div class="col-md right-info boarder vertical-right p-3 h-100" pull-right>
+        <div class="user-img">
+          <img src="{% static 'images/library.jpg' %}" class="rounded float-right" width="500px" height="600px" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+  <!-- --schools-- -->
+  <style>
+    .btn-outline-dark:hover {
+        background-color: #8e2424;
+        color: #ffffff;
+      }
+    </style>
+  <section class="about-section pt-5 pb-5">
+    <div class="container">
+      <div class="text-center pb-4">
+        <h2 class="fw-bold">Academic Programs</h2>
+      </div>
+      <did class="row">
+        <div class="col-md-3 mb-2 mb-lg-0">
+          <div class="card">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <div class="card-body">
+              <h5 class="card-tittle course-heading">
+                School of Business
+              </h5>
+              <hr>
+              <p>Gain a solid foundation in management, finance, and entrepreneurship. Develop the skills to succeed in the dynamic world of business.</p>
+                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 mb-lg-0">
+          <div class="card">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <div class="card-body">
+              <h5 class="card-tittle course-heading">
+                School of Information Computer Technology
+              </h5>
+              <hr>
+              <p>Stay ahead of the curve with our cutting-edge programs in computer science, data analysis and digital innovation. Become a tech-savvy problem-solver.</p>
+                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 mb-lg-0">
+          <div class="card">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <div class="card-body">
+              <h5 class="card-tittle course-heading">
+                School of Counseling and Psychology
+              </h5>
+              <hr>
+              <p>Explore the human mind and learn how to support others. Develop empathy, communication skills and evidence-based therapeutic approaches</p>
+                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 mb-lg-0">
+          <div class="card">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <div class="card-body">
+              <h5 class="card-tittle course-heading">
+                School of Engineering
+              </h5>
+              <hr>
+              <p>Bring your ideas to life through our rigorous engineering programs. Gain hands-on experience in design, problem-solving and innovation.</p>
+                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </did> <br>
+      <div class="row justify-content-center">
+        <div class="col-md-3 mb-2 mb-lg-0">
+          <div class="card">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <div class="card-body">
+              <h5 class="card-tittle course-heading">
+                School of Fashion Technology
+              </h5>
+              <hr>
+              <p>Unleash your creative flair and master the art of fashion design, textile production, and garment construction. Prepare for a dynamic career in the industry</p>
+                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 mb-lg-0">
+          <div class="card">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <div class="card-body">
+              <h5 class="card-tittle course-heading">
+                School of Nursig
+              </h5>
+              <hr>
+              <p>Gain a solid foundation in management, finance, and entrepreneurship. Develop the skills to succeed in the dynamic world of business.</p>
+                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-2 mb-lg-0">
+          <div class="card">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <div class="card-body">
+              <h5 class="card-tittle course-heading">
+                Computer Packages
+              </h5>
+              <hr>
+              <p>1.Office Productivity<br>
+                2.Web Development<br>
+                3.Programming & Coding<br>
+                4.Database Management<br>
+                5.Cybersecurity<br></p>
+                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -----events----- -->
+  <style>
+    .facilities{
+        background-color: #736f6f;
+    }
+    </style>
+  <section class="facilities text-white">
+    <h1>Immaculate Nexus Events</h1>
+    <p>business, information technology, psycolgy, accounting, nursing.</p>
+    <div class="container">
+    <div class="row justify-content-center">
+        <div class="facilities-col">
+            <img src="{% static 'images/pexels-pixabay-256559.jpg' %}">
+                <h3>Offical opening of the school</h3>
+                <p>business, information technology, psycolgy, accounting, nursing.</p>
+                <div class="d-grid gap-2">
+                <button type="button" class="btn btn-secondary btn-lg">Read More</button>
+                </div>
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'images/pexels-pixabay-256559.jpg' %}">
+                <h3>Orientation</h3>
+                <p>business, information technology, psycolgy, accounting, nursing.</p>
+                <div class="d-grid gap-2">
+                  <br><button type="button" class="btn btn-secondary btn-lg">Read More</button>
+                </div>
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'images/pexels-pixabay-256559.jpg' %}">
+                <h3>Opening of the library</h3>
+                <p>business, information technology, psycolgy, accounting, nursing.</p>
+                <div class="d-grid gap-2">
+                  <br><button type="button" class="btn btn-secondary btn-lg">Read More</button>
+                  </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ----Enroll--- -->
+<style>
+  .enroll{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("{% static 'images/study-group-african-people_23-2149156431.jpg' %}");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .enroll:hover {
+      background-color: #8e2424;
+      color: #ffffff;
+    }
+  </style>
+  <section class="enroll">
+    <h1>Enroll for our various Courses</h1>
+    <a href="" class="btn btn-outline-light text-white">Contact Us <i class="bi bi-arrow-right-circle-fill"></i> </a>
+  </section>
+
+{% include 'footer.html' %}
+
+{% endblock %}
