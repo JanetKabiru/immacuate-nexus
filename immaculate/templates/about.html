@@ -1,6 +1,6 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %} 
 {% include 'navbar.html' %}
 <script>
   // JavaScript code to add 'active' class to the element with ID 'home-nav'
@@ -10,262 +10,122 @@
       console.log("Add class");
   }
 </script>
+<style>
+  .about-landing{
+    margin: 10px auto;
+    width: 99%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("{% static 'images/study-group-african-people_23-2149156431.jpg' %}");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 0;
+  }
+  .container-mission{
+    border-radius: 10px;
+    text-align: center;
+    padding: auto 50%;
+  }
+</style>
+
+
 <section>
   <div class="about-landing">
-    <h2 class="about-landing-title"></h2>
+    <h2 class="about-landing-title h2" style="color: white;">May Intake Ongoing</h2>
+    <div> <br> <br> <br>
+    <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
+    </div>
   </div>
 </section>
+<br/><br/><br/>
+<!-- --about us-- -->
+<section>
+  <div class="container">
+  <h2 style="text-align: center;">About Us</h2>
+  <p style="text-align: center;">
+    Welcome to Immaculate Nexus Training College, where we strive to provide
+    innovative education solutions for the leaders of tomorrow. Immaculate Nexus
+    Training College is registered by the Technical and Vocational Education
+    Training Authority (TVET Authority). Our programmes are examined by
+    internationally and nationally recognized bodies like: KNEC, KASNEB, ICM
+    (UK), City & Guilds (UK), CSK, ABMA (UK) and NITA. There are four intakes
+    per year that is; in January, May, July and September.
+  </p><br> <br> <br>
+</div>
+</section>
 
-  <!-- --about us-- -->
-  <style>
-    .about-section h5 {
-      list-style-type: disc;
-    }
-  </style>
-  <section class="about-section bg-light pt5-pb-5 text-white">
-    <div class="container" style="background-color: #8e2424;">
-      <div class="row">
-        <div class="col-md-6 left-info">
-          <div class="heading">
-            <h2 class="fw-bold pb-5">Empowering tomorrow</h2>
-          </div>
-          <h5>Holistic Education</h5>
-          <p style="text-align: justify;">Our programs blend theoretical knowledge with<br> practical applications,
-            empowering students to <br>tackle real-world challenges</p>
-          <h5>Future-Ready
-            Skills
-          </h5>
-          <p style="text-align: justify;">We equip students with the
-            essential skills and tools<br>
-            needed to thrive in the
-            rapidly evolving job market.</p>
-          <h5>Transformative
-            Experience
-          </h5>
-          <p style="text-align: justify;">Through our immersive
-            learning environment,<br>
-            students embark on a
-            transformative journey of<br>
-            personal and professional
-            growth.</p>
-          <div>
-            <br>
-            <button class="btn btn-outline-light">Read More <i class="bi bi-arrow-right-circle-fill"></i></button>
-          </div>
-        </div>
-        <div class="col-md right-info boarder vertical-right p-3 h-100" pull-right>
-          <div class="user-img">
-            <img src="{% static 'images/library.jpg' %}" class="rounded float-right" width="500px" height="600px" alt="">
-          </div>
-        </div>
-      </div>
+<!-- --MISSION-- -->
+
+<section>
+  <div class="row" style="height: 40vh; width: 100%;">
+    <div class="col"></div>
+    <div class="col-md-3" >
+      <div class="container-mission" style="background-color: #e7dcdc; height: 40vh; text-align: center; padding-top: 25%;">
+      <h4>OUR VISION</h4>
+      <p>Empowering tomorrow</p>
     </div>
     </div>
-  </section>
+    <div class="col-md-3">
+      <div class="container-mission" style="background-color: #e7dcdc; height: 40vh; text-align: center; padding-top: 25%;">
+      <h4>OUR MISSION</h4>
+      <p>Empowering tomorrow</p>
+    </div>
+    </div>
+    <div class="col-md-3">
+      <div class="container-mission" style="background-color: #e7dcdc; height: 40vh; text-align: center; padding-top: 25%;">
+      <h4>OUR CORE VALUES</h4>
+      <p>Empowering tomorrow</p>
+    </div>
+    </div>
+    <div class="col"></div>
+  </div><br> <br> <br>
+</section>
 
-  <!-- --schools-- -->
-  <style>
-    .btn-outline-dark:hover {
-      background-color: #8e2424;
-      color: #ffffff;
-    }
-  </style>
-  <section class="about-section pt-5 pb-5">
-    <div class="container">
-      <div class="text-center pb-4">
-        <h2 class="fw-bold">Academic Programs</h2>
+
+
+<!-- --- students life--- -->
+
+<section class="student-life">
+  <div class="containe text-center">
+    <br />
+    <br />
+    <h1>Student Life</h1>
+    <div class="row justify-content-center" style="width: 100%;">
+      <div class="col-md-3 mb-2 mb-lg-0">
+        <h3>Residential Life</h3>
+        <p>
+          At Immaculate Nexus, we believe that the residential experience is an
+          essential part of the college journey. Our on-campus housing options
+          provide students with a comfortable and supportive living environment,
+          fostering a sense of community and belonging.
+        </p>
+        <br />
       </div>
-      <did class="row">
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
-            <div class="card-body">
-              <h5 class="card-tittle course-heading">
-                School of Business
-              </h5>
-              <hr>
-              <p>Gain a solid foundation in management, finance, and entrepreneurship. Develop the skills to succeed in
-                the dynamic world of business.</p>
-              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
-            <div class="card-body">
-              <h5 class="card-tittle course-heading">
-                School of Information Computer Technology
-              </h5>
-              <hr>
-              <p>Stay ahead of the curve with our cutting-edge programs in computer science, data analysis and digital
-                innovation. Become a tech-savvy problem-solver.</p>
-              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
-            <div class="card-body">
-              <h5 class="card-tittle course-heading">
-                School of Counseling and Psychology
-              </h5>
-              <hr>
-              <p>Explore the human mind and learn how to support others. Develop empathy, communication skills and
-                evidence-based therapeutic approaches</p>
-              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
-            <div class="card-body">
-              <h5 class="card-tittle course-heading">
-                School of Engineering
-              </h5>
-              <hr>
-              <p>Bring your ideas to life through our rigorous engineering programs. Gain hands-on experience in design,
-                problem-solving and innovation.</p>
-              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
-            </div>
-          </div>
-        </div>
-      </did> <br>
-      <div class="row justify-content-center">
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
-            <div class="card-body">
-              <h5 class="card-tittle course-heading">
-                School of Fashion Technology
-              </h5>
-              <hr>
-              <p>Unleash your creative flair and master the art of fashion design, textile production, and garment
-                construction. Prepare for a dynamic career in the industry</p>
-              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
-            <div class="card-body">
-              <h5 class="card-tittle course-heading">
-                School of Nursig
-              </h5>
-              <hr>
-              <p>Gain a solid foundation in management, finance, and entrepreneurship. Develop the skills to succeed in
-                the dynamic world of business.</p>
-              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
-            <div class="card-body">
-              <h5 class="card-tittle course-heading">
-                Computer Packages
-              </h5>
-              <hr>
-              <p>1.Office Productivity<br>
-                2.Web Development<br>
-                3.Programming & Coding<br>
-                4.Database Management<br>
-                5.Cybersecurity<br></p>
-              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-3 mb-2 mb-lg-0">
+        <h3>Student Organizations</h3>
+        <p>
+          Our vibrant campus life is enhanced by a wide array of student
+          organizations, ranging from academic clubs and honor societies to
+          cultural groups and recreational teams. These organizations offer
+          students opportunities to explore their interests, develop leadership
+          skills and engage with their peers.
+        </p>
       </div>
     </div>
-  </section>
-
-  <!-- -----events----- -->
-  <style>
-    .facilities {
-      background-color: #736f6f;
-    }
-  </style>
-  <section class="facilities text-white">
-    <h1>Immaculate Nexus Events</h1>
-    <p>business, information technology, psycolgy, accounting, nursing.</p>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="facilities-col">
-          <img src="{% static 'images/pexels-pixabay-256559.jpg' %}">
-          <h3>Offical opening of the school</h3>
-          <p>business, information technology, psycolgy, accounting, nursing.</p>
-          <div class="d-grid gap-2">
-            <button type="button" class="btn btn-secondary btn-lg">Read More</button>
-          </div>
-        </div>
-        <div class="facilities-col">
-          <img src="{% static 'images/pexels-pixabay-256559.jpg' %}">
-          <h3>Orientation</h3>
-          <p>business, information technology, psycolgy, accounting, nursing.</p>
-          <div class="d-grid gap-2">
-            <br><button type="button" class="btn btn-secondary btn-lg">Read More</button>
-          </div>
-        </div>
-        <div class="facilities-col">
-          <img src="{% static 'images/pexels-pixabay-256559.jpg' %}">
-          <h3>Opening of the library</h3>
-          <p>business, information technology, psycolgy, accounting, nursing.</p>
-          <div class="d-grid gap-2">
-            <br><button type="button" class="btn btn-secondary btn-lg">Read More</button>
-          </div>
-        </div>
+    <div class="row justify-content-center" style="width: 100%;">
+      <div class="col-md-3 mb-2 mb-lg-0">
+        <h3>Academic Support</h3>
+        <p>
+          At Immaculate Nexus, we are committed to supporting our students'
+          academic success. Our comprehensive academic support services include
+          tutoring, writing workshops, peer mentoring and faculty office hours,
+          ensuring that each student has the resources they need to thrive.
+        </p>
       </div>
     </div>
-  </section>
-
-  <!-- --- students life--- -->
-
-  <section class="student-life">
-    <div class="containe text-center">
-      <br> <br>
-      <h1>Student Life</h1>
-      <div class="row justify-content-center">
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <h3>Residential Life</h3>
-          <p>At Immaculate Nexus, we believe that the residential experience is an essential part of the college
-            journey. Our on-campus housing options provide students with a comfortable and supportive living
-            environment, fostering a sense of community and belonging.</p><br>
-        </div>
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <h3>Student Organizations</h3>
-          <p>Our vibrant campus life is enhanced by a wide array of student organizations, ranging from academic clubs
-            and honor societies to cultural groups and recreational teams. These organizations offer students
-            opportunities to explore their interests, develop leadership skills and engage with their peers.</p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <h3>Academic Support</h3>
-          <p>At Immaculate Nexus, we are committed to supporting our students' academic success. Our comprehensive
-            academic support services include tutoring, writing workshops, peer mentoring and faculty office hours,
-            ensuring that each student has the resources they need to thrive.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div><br> <br> <br>
+</section>
 
 
-
-  <!-- ----Enroll--- -->
-  <style>
-    .enroll:hover {
-      background-color: #8e2424;
-      color: #ffffff;
-    }
-  </style>
-  <section class="enroll">
-    <h1>Enroll for our various Courses</h1>
-    <a href="" class="btn btn-outline-light text-white">Contact Us <i class="bi bi-arrow-right-circle-fill"></i> </a>
-  </section>
-  {% include 'footer.html' %}
-
-  {% endblock %}
+{% include 'footer.html' %} 
+{% endblock %}

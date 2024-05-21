@@ -1,8 +1,7 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block content %}                     
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %} 
 {% include 'navbar.html' %}
-{{block.super}}
 <script>
   // JavaScript code to add 'active' class to the element with ID 'home-nav'
   const homeNav = document.getElementById('courses-nav');
@@ -23,7 +22,8 @@
     </div>
   </section>
 
-  <!-- --courses-- -->
+<!-- <section>
+  --courses--
   <section class="course">
     <div class="row">
         <div class="course-col">
@@ -53,7 +53,7 @@
         </div>
     </div>
 
-</section>
+</section> -->
 
   <!-- --schools-- -->
   <style>
@@ -62,7 +62,7 @@
         color: #ffffff;
       }
     </style>
-  <section class="about-section pt-5 pb-5">
+  <section class="about-section pt-5 pb-5" >
     <div class="container">
       <div class="text-center pb-4">
         <h2 class="fw-bold">Academic Programs</h2>
@@ -70,7 +70,7 @@
       <did class="row">
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Business
@@ -83,7 +83,7 @@
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Information Computer Technology
@@ -96,7 +96,7 @@
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Counseling and Psychology
@@ -109,7 +109,7 @@
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Engineering
@@ -124,7 +124,7 @@
       <div class="row justify-content-center">
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Fashion Technology
@@ -137,7 +137,7 @@
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Nursig
@@ -150,7 +150,7 @@
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 Computer Packages
@@ -193,6 +193,7 @@
     </div>
   </section>
 
-<!-- ----Enroll--- -->
-{% include 'footer.html' %}
-{% endblock %}  
+
+
+  
+{% include 'footer.html' %} {% endblock %}
