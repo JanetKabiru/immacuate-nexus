@@ -1,7 +1,16 @@
 {% extends 'base.html' %}
+{% load widget_tweaks %}
 {% load static %}
 {% block content %}
 {% include 'navbar.html' %}
+<script>
+  // JavaScript code to add 'active' class to the element with ID 'home-nav'
+  const homeNav = document.getElementById('contacts-nav');
+  if (homeNav) {
+      homeNav.classList.add('active');
+      console.log("Add class");
+  }
+</script>
   <section class="contactholder">
    <div class="contact">
     <br />
@@ -12,110 +21,95 @@
          About Us </a>
     </p>
     <div class="row" style="width: 100%;">
-      <div class="col-md-6 contact-col">
+      <div class="col-lg-6 contact-col">
         <div class="row">
-          <div class="col-md-3"></div>                
-          <div class="col-md-9">                                            
-            <form class="contact-form" action="" method="POST">  
+          <div class="col-lg-3"></div>                
+          <div class="col-lg-9">                                            
+            <form class="contact-form" data-url="{{ request.build_absolute_uri|safe }}" method="POST">  
+              {% csrf_token %}
               <div class="mb-3">
                 <label for="fullNameInput" class="form-label">Full Name</label>
-                <input type="text" class="form-control" name="contact-name" id="fullNameInput" required aria-required="true">                        
+                {% render_field form.full_name class="form-control" name="contact-name" id="fullNameInput" required="True"  %}        
+                <!-- <input type="text" class="form-control" name="contact-name" id="fullNameInput" required aria-required="true">                         -->
               </div>
               <div class="mb-3">
                 <label for="emailInput" class="form-label">Email</label>
-                <input type="email" class="form-control" name="contact-email" id="emailInput" aria-describedby="emailHelp" required aria-required="true">                        
+                {% render_field form.email class="form-control" name="contact-email" id="emailInput" aria-describedby="emailHelp"  required="True" %}                        
+                <!-- <input type="email" class="form-control" name="contact-email" id="emailInput" aria-describedby="emailHelp" required aria-required="true">                         -->
               </div>    
               <div class="mb-3">
-                <label for="emailInput" class="form-label">Subject</label>
-                <input type="email" class="form-control" name="contact-email" id="emailInput" aria-describedby="emailHelp" required aria-required="true">                        
+                <label for="subjectInput" class="form-label">Subject</label>
+                {% render_field form.subject class="form-control" name="contact-email" id="subjectInput" aria-describedby="subjectHelp" required="True" %}       
+                <!-- <input type="email" class="form-control" name="contact-email" id="emailInput" aria-describedby="emailHelp" required aria-required="true">                         -->
               </div>                 
               <div class="mb-3 form-floating">
-                <textarea class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required aria-required="true"></textarea>
+                {% render_field form.message class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2" required="True" %}
+                <!-- <textarea class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required aria-required="true"></textarea> -->
                 <label for="floatingTextarea2">What's on you mind?</label>
-              </div>
+              </div>                
               <button type="submit" class="btn blue-btn">SEND</button>
             </form>                                 
           </div>
         </div>
       </div>
-      <div class="col-md-6">  
-        <div class="container" style="width: 80%;">
-          <div class="row" style="margin-top: 100px;">
-            <div class="col-md-2" >                                    
-              <div class="container" style="font-size: 35px; color: #8e2424; background: #f7d9d9;border-radius: 50%; height: 60px;width: 60px;">
-                <i class='bx bxs-map-pin' style="margin-top: 12px; margin-left: -10px;"></i>
+      <div class="col-lg-6">  
+        <div class="container" style="width: 100%;">
+          <div class="row" style="margin-top: 100px; flex: 0 0 auto;">
+            <div class="col-2 col-lg-2 contacts-section-1">                                    
+              <div class="container contacts-icon-holder">
+                <i class="bx bxs-map-pin contacts-icon"></i>
               </div>                
             </div>
-            <div class="col-md-10">
+            <div class="col-10 col-lg-10 contacts-text">
               <h5>Location:</h5>
               <h6>Kianguenyi, Kirinyaga County</h6>
             </div>
           </div>
           <br /> <br />      
-          <div class="row">
-            <div class="col-md-2">            
-              <div class="container" style="font-size: 35px; color: #8e2424; background: #f7d9d9;border-radius: 50%; height: 60px;width: 60px;">
-                <i class='bx bxs-phone' style="margin-top: 12px; margin-left: -10px;"></i>            
+          <div class="row" style="flex: 0 0 auto;">
+            <div class="col-2 col-lg-2 contacts-section-1">            
+              <div class="container contacts-icon-holder">
+                <i class="bx bxs-phone contacts-icon"></i>            
               </div>
-            </div>
-            <div class="col-md-10">
+            </div>              
+            <div class="col-10 col-lg-10 contacts-text">
               <h5>Phone:</h5>
               <h6>+254701 797 933 /+254720 478 382 </h6>
             </div>
           </div>
           <br /> <br />
-          <div class="row">
-            <div class="col-md-2">
-              <div class="container" style="font-size: 35px; color: #8e2424; background: #f7d9d9;border-radius: 50%; height: 60px;width: 60px;">              
-                <i class='bx bxs-envelope'style="margin-top: 12px; margin-left: -10px;"></i>  
+          <div class="row" style="flex: 0 0 auto;">
+            <div class="col-2 col-lg-2 contacts-section-1">
+              <div class="container contacts-icon-holder">              
+                <i class="bx bxs-envelope contacts-icon"></i>  
               </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-10 col-lg-10 contacts-text">
               <h5>Email:</h5>
               <h6>immaculatenexustechnicals@gmail.com</h6>
             </div>
           </div>
           <br /> <br />
-          <div class="icons row" style="font-size: 48px; text-decoration: none;">
-            <div class="col-2"></div>          
-            <div class="col">
-              <a href="https://web.facebook.com/profile.php?id=61559038852920" target="_blank" style="color:#1877F2;"><i class="bx bxl-facebook-circle"></i></a></div>
-            <div class="col">
-              <a href="https://www.instagram.com/immaculate.nexus.college/" target="_blank"></a><span class="instagram"><span class="fa fa-instagram"></span></span></a>
+          <div class="icons-row row">
+            <div class="col d-none d-sm-block"></div>          
+            <div class="col-2" style="text-align: center;">
+              <a href="https://web.facebook.com/profile.php?id=61559038852920" target="_blank" style="color:#1877F2;"><i class="bx bxl-facebook-circle"></i></a>
             </div>
-            <div class="col">
-              <a href="https://www.tiktok.com/@immaculatenexustcollege" target="_blank"></a><i class='bx bxl-tiktok' ></i></a>
+            <div class="col-2" style="text-align: center;">
+              <a href="https://www.instagram.com/immaculate.nexus.college/" target="_blank"><span class="instagram"><span class="fa fa-instagram"></span></span></a>
             </div>
-            <div class="col">
-              <a href="https://www.youtube.com/@ImmaculateNexusTrainingCollege" target="_blank"></a><i class="bx bxl-youtube" style="color:#FF0000;"></i></a>
+            <div class="col-2" style="text-align: center;">
+              <a href="https://www.tiktok.com/@immaculatenexustcollege" target="_blank"><i class='bx bxl-tiktok' ></i></a>
             </div>
-            <div class="col-2"></div>                                        
+            <div class="col-2" style="text-align: center;">
+              <a href="https://www.youtube.com/@ImmaculateNexusTrainingCollege" target="_blank"><i class="bx bxl-youtube" style="color:#FF0000;"></i></a>
+            </div>
+            <div class="col d-none d-sm-block"></div>                                        
           </div>
         </div>
         
       </div>
     </div>
-    <style>
-      .bxl-tiktok {
-        color: #111111;        
-        filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
-      }
-      .instagram {
-          display: inline-block;
-          width: 38px;
-          height: 38px;
-          text-align: center;
-          border-radius: 10px;
-          color: #fff;
-          font-size: 35px;
-          line-height: 35px;
-          vertical-align: middle;
-          margin-top: -10px;
-          background: #d6249f;
-          background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-          box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-        }
-    </style>
     <br>
     <div class="container">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6937128777167!2d37.29066757496469!3d-0.4528289995427291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18287f81514be303%3A0xcfa446d188180fff!2sImmaculate%20Nexus%20Training%20College!5e0!3m2!1sen!2ske!4v1715525305180!5m2!1sen!2ske" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -2,6 +2,14 @@
 {% load static %}
 {% block content %}
 {% include 'navbar.html' %}
+<script>
+  // JavaScript code to add 'active' class to the element with ID 'home-nav'
+  const homeNav = document.getElementById('about-nav');
+  if (homeNav) {
+      homeNav.classList.add('active');
+      console.log("Add class");
+  }
+</script>
 <section>
   <div class="about-landing">
     <h2 class="about-landing-title"></h2>
@@ -47,7 +55,7 @@
         </div>
         <div class="col-md right-info boarder vertical-right p-3 h-100" pull-right>
           <div class="user-img">
-            <img src="INTC IMAGES/library.jpg" class="rounded float-right" width="500px" height="600px" alt="">
+            <img src="{% static 'images/library.jpg' %}" class="rounded float-right" width="500px" height="600px" alt="">
           </div>
         </div>
       </div>
@@ -70,7 +78,7 @@
       <did class="row">
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Business
@@ -84,7 +92,7 @@
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Information Computer Technology
@@ -98,7 +106,7 @@
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Counseling and Psychology
@@ -112,7 +120,7 @@
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Engineering
@@ -128,7 +136,7 @@
       <div class="row justify-content-center">
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Fashion Technology
@@ -142,7 +150,7 @@
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Nursig
@@ -156,7 +164,7 @@
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
           <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" alt="">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 Computer Packages
@@ -187,7 +195,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="facilities-col">
-          <img src="images/pexels-pixabay-256559.jpg">
+          <img src="{% static 'images/pexels-pixabay-256559.jpg' %}">
           <h3>Offical opening of the school</h3>
           <p>business, information technology, psycolgy, accounting, nursing.</p>
           <div class="d-grid gap-2">
@@ -195,7 +203,7 @@
           </div>
         </div>
         <div class="facilities-col">
-          <img src="images/pexels-pixabay-256559.jpg">
+          <img src="{% static 'images/pexels-pixabay-256559.jpg' %}">
           <h3>Orientation</h3>
           <p>business, information technology, psycolgy, accounting, nursing.</p>
           <div class="d-grid gap-2">
@@ -203,7 +211,7 @@
           </div>
         </div>
         <div class="facilities-col">
-          <img src="images/pexels-pixabay-256559.jpg">
+          <img src="{% static 'images/pexels-pixabay-256559.jpg' %}">
           <h3>Opening of the library</h3>
           <p>business, information technology, psycolgy, accounting, nursing.</p>
           <div class="d-grid gap-2">

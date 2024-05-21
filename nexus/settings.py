@@ -11,6 +11,13 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
 from pathlib import Path
+# import environ
+
+# env = environ.Env()
+# environ.Env.read_env()
+from dotenv import load_dotenv
+# Load environment variables from .env file
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,12 +27,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-+(@&ws61p&0=l&!fbguiftkh5o%c-b6-3oq63sixe5a_39cy(i'
+SECRET_KEY = os.getenv("SECRET_KEY", default="")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", default="")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'immaculate'
+    'immaculate',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +132,13 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+EMAIL_HOST= os.getenv("EMAIL_HOST", default="") 
+EMAIL_PORT= os.getenv("EMAIL_PORT", default="") 
+EMAIL_HOST_USER= os.getenv("EMAIL_HOST_USER", default="") 
+EMAIL_HOST_PASSWORD= os.getenv("EMAIL_HOST_PASSWORD", default="") 
+EMAIL_USE_TLS= os.getenv("EMAIL_USE_TLS", default="") 
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

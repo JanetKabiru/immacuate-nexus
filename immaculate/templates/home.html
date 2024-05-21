@@ -1,8 +1,15 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-{% include 'navbar.html' %}
-
+{% include 'navbar.html' %}  
+  <script>
+    // JavaScript code to add 'active' class to the element with ID 'home-nav'
+    const homeNav = document.getElementById('home-nav');
+    if (homeNav) {
+        homeNav.classList.add('active');
+        console.log("Add class");
+    }
+  </script>
   <section class="hero">
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
       <div class="carousel-inner">
@@ -288,7 +295,6 @@
     <h1>Enroll for our various Courses</h1>
     <a href="" class="btn btn-outline-light text-white">Contact Us <i class="bi bi-arrow-right-circle-fill"></i> </a>
   </section>
-
-{% include 'footer.html' %}
+{% include 'footer.html' %}  
 
 {% endblock %}

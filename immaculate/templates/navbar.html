@@ -33,13 +33,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-1 mb-lg-0 text-uppercase">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a>
+            <a class="nav-link" id="home-nav" aria-current="page" href="{% url 'home' %}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'about' %}">About</a>
+            <a class="nav-link" id="about-nav" href="{% url 'about' %}">About</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{% url 'courses' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="home-nav" href="{% url 'courses' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Courses
             </a>
             <ul class="dropdown-menu">
@@ -47,15 +47,18 @@
               <li><a class="dropdown-item" href="#">Certificate Courses</a></li>
               <li><a class="dropdown-item" href="#">Artisan Courses</a></li>
             </ul>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" id="courses-nav" href="{% url 'courses' %}">Courses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'admissions' %}">Admissions</a>
+            <a class="nav-link" id="admissions-nav" href="{% url 'admissions' %}">Admissions</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" id="events-nav" href="{% url 'events' %}">Events</a>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'events' %}">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'contacts' %}">Contacts</a>
+            <a class="nav-link" id="contacts-nav" href="{% url 'contacts' %}">Contacts</a>
           </li>
         </ul>
         <form class="d-flex" role="search">

@@ -1,0 +1,16 @@
+<body style="background-color:#8b030354">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');        
+    </style>
+    <br><br>
+    <center>
+        <div style="background-color:#ffffff; width: 70%; height: 600px; border-radius: 5px; margin-top: 50px; font-family: robot;">
+            <br><br>
+            <p style="font-size: 25px; color:#8b0303;">{{name}} says, </p>
+            <h5 style="font-size: 22px; color:#727070;">{{subject}}:</h5>
+            <p style="font-size: 18px; color:#727070;">{{email_message}}</p>
+            <p style="font-size: 15px;">Reply to: <span style="color:#8b0303; font-size: 18px;">{{email}}</span></p>
+        </div>
+    </center>
+    <br><br><br><br>
+</body>
