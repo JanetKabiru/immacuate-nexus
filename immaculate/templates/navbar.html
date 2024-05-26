@@ -8,11 +8,11 @@
             <span class="top-header-span me-3 pt-2"> <i class='bx bxs-map-pin' ></i></i> KIRINYAGA COUNTY</span>
             <span class="me-3 top-header-span"> <i class='bx bxs-phone'></i></i> +254 701797933 / +254
               720478382</span>
-            <span><a href="" class="me-3"><button class="btn btn-light btn-sm top-header-span"><i
+            <span><a href="{% url 'contacts' %}" class="me-3"><button class="btn btn-light btn-sm top-header-span"><i
                     class="bi bi-telephone-fill me-1"></i>Contact Us</button></a></span>
           </div>
           <div class="col-lg-4 text-center col-sm-6 text-lg-end">
-            <a href="" class="me-3"> <button class="btn btn-light btn-sm top-header-span"><i
+            <a href="{% url 'admissions' %}" class="me-3"> <button class="btn btn-light btn-sm top-header-span"><i
                   class="bi bi-telephone-fill mx-1"></i> Apply</button></a>
             <a href="" class="text-white me-3 fw-bold"><i class="bi bi-download"></i></a>
           </div>
@@ -61,9 +61,9 @@
             <a class="nav-link" id="contacts-nav" href="{% url 'contacts' %}">Contacts</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
+        <!-- <form class="d-flex" role="search">
           <input class="form-control ms-2" type="search" placeholder="Search" aria-label="Search">
-        </form>
+        </form> -->
       </div>
     </div>
   </nav>
