@@ -3,7 +3,6 @@
 {% block content %}
 {% include 'navbar.html' %}  
   <script>
-    // JavaScript code to add 'active' class to the element with ID 'home-nav'
     const homeNav = document.getElementById('home-nav');
     if (homeNav) {
         homeNav.classList.add('active');
@@ -12,7 +11,13 @@
   </script>
   <section class="hero" style="width: 100%;">
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-      <div class="carousel-inner">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">        
         <div class="carousel-item active">
           <img src="{% static 'images/library.jpg' %}" class="d-block w-100" alt="...">
           <div class="carousel-container">
@@ -23,202 +28,199 @@
                 <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/computer lab.jpg' %}" class="d-block w-100" alt="...">
+          <div class="carousel-container">
+            <div class="carousel-topics container">
+              <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
+              <p>MAY 2024 INTAKE ONGOING</p>
+              <div>
+                <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="{% static 'images/computer lab.jpg' %}" class="d-block w-100" alt="...">
-            <div class="carousel-container">
-              <div class="carousel-topics container">
-                <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
-                <p>MAY 2024 INTAKE ONGOING</p>
-                <div>
-                  <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
-                </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/study-group-african-people_23-2149156387.jpg' %}" class="d-block w-100" alt="...">
+          <div class="carousel-container">
+            <div class="carousel-topics container">
+              <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
+              <p>MAY 2024 INTAKE ONGOING</p>
+              <div>
+                <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/pexels-pixabay-159213.jpg' %}" class="d-block w-100" alt="...">
+          <div class="carousel-container">
+            <div class="carousel-topics container">
+              <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
+              <p>MAY 2024 INTAKE ONGOING</p>
+              <div>
+                <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="{% static 'images/study-group-african-people_23-2149156387.jpg' %}" class="d-block w-100" alt="...">
-              <div class="carousel-container">
-                <div class="carousel-topics container">
-                  <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
-                  <p>MAY 2024 INTAKE ONGOING</p>
-                  <div>
-                    <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
-                  </div>
-                </div>
-              </div>
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'images/pexels-pixabay-159213.jpg' %}" class="d-block w-100" alt="...">
-                <div class="carousel-container">
-                  <div class="carousel-topics container">
-                    <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
-                    <p>MAY 2024 INTAKE ONGOING</p>
-                    <div>
-                      <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+          </div>
+        </div>        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </section>
-
+  <br /><br />
   <!-- --about us-- -->
   <style>
-    .about-section h5 {
+    /* .about-section h5 {
     list-style-type: disc;
-    }
+    } */
     </style>
-  <section class="about-section bg-light pt5-pb-5 text-white">
-    <div class="container" style="background-color: #8e2424;">
-    <div class="row">
-      <div class="col-md-6 left-info">
-          <div class="heading">
-            <h2 class="fw-bold pb-5">Empowering tomorrow</h2>
-          </div>
-          <h5>Holistic Education</h5>
-          <p style="text-align: justify;">Our programs blend theoretical knowledge with<br> practical applications, empowering students to <br>tackle real-world challenges</p>
-          <h5>Future-Ready
-            Skills
-            </h5>
-          <p style="text-align: justify;">We equip students with the 
-            essential skills and tools<br>
-            needed to thrive in the
-            rapidly evolving job market.</p>
-            <h5>Transformative
-              Experience              
-              </h5>
-            <p style="text-align: justify;">Through our immersive
-              learning environment,<br>
-              students embark on a
-              transformative journey of<br>
-              personal and professional
-              growth.</p>
-            <div>
-              <br>
-              <button class="btn btn-outline-light">Read More <i class="bi bi-arrow-right-circle-fill"></i></button>
+
+  <section class="about-section text-white">
+    <div class="container about-section-info">
+      <div class="row">
+        <div class="col-md-8 about-section-left-info">  
+          <div class="row">
+            <div class="col-lg-10">
+              <h2 class="fw-bold heading">Empowering tomorrow</h2>          
+              <h5>Holistic Education</h5>
+              <p>Our programs blend theoretical knowledge with practical applications, empowering students to tackle real-world challenges</p>
+              <h5>Future-Ready Skills</h5>
+              <p>We equip students with the essential skills and tools needed to thrive in the rapidly evolving job market.</p>
+              <h5>Transformative Experience</h5>
+              <p>Through our immersive learning environment, students embark on a transformative journey of personal and professional growth.</p>
+              <div>
+                <br>
+                <button class="btn btn-outline-light">Read More <i class="bi bi-arrow-right-circle-fill"></i></button>
+              </div>
             </div>
-      </div>
-      <div class="col-md right-info boarder vertical-right p-3 h-100" pull-right>
-        <div class="user-img">
-          <img src="{% static 'images/library.jpg' %}" class="rounded float-right" width="500px" height="600px" alt="">
+            <div class="col-lg-2">
+              <div class="container user-img">
+                <img src="{% static 'images/library.jpg' %}" class="rounded about-section-img "  alt="">  
+              </div>              
+            </div>
+          </div>                  
         </div>
+        <div class="col-md-4 about-section-right-info"></div>          
       </div>
     </div>
-  </div>
-</div>
-</section>
+  </section>
 
   <!-- --schools-- -->
-  <style>
-    .btn-outline-dark:hover {
-        background-color: #8e2424;
-        color: #ffffff;
-      }
-    </style>
-  <section class="about-section pt-5 pb-5">
+  <section class="courses-section pt-5 pb-5">
     <div class="container">
       <div class="text-center pb-4">
         <h2 class="fw-bold">Academic Programs</h2>
       </div>
-      <did class="row">
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-tittle course-heading">
+              <h5 class="card-tittle courses-section-heading">
                 School of Business
               </h5>
               <hr>
-              <p>Gain a solid foundation in management, finance, and entrepreneurship. Develop the skills to succeed in the dynamic world of business.</p>
-                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <p>Gain a solid foundation in management, finance, and entrepreneurship. Develop the skills to succeed in the dynamic world of business.</p>                
+            </div>
+            <div class="card-footer">
+              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-tittle course-heading">
+              <h5 class="card-tittle courses-section-heading">
                 School of Information Computer Technology
               </h5>
               <hr>
-              <p>Stay ahead of the curve with our cutting-edge programs in computer science, data analysis and digital innovation. Become a tech-savvy problem-solver.</p>
-                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <p>Stay ahead of the curve with our cutting-edge programs in computer science, data analysis and digital innovation. Become a tech-savvy problem-solver.</p>                
+            </div>
+            <div class="card-footer">
+              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-tittle course-heading">
+              <h5 class="card-tittle courses-section-heading">
                 School of Counseling and Psychology
               </h5>
               <hr>
-              <p>Explore the human mind and learn how to support others. Develop empathy, communication skills and evidence-based therapeutic approaches</p>
-                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <p>Explore the human mind and learn how to support others. Develop empathy, communication skills and evidence-based therapeutic approaches</p>                
+            </div>
+            <div class="card-footer">
+              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-tittle course-heading">
+              <h5 class="card-tittle courses-section-heading">
                 School of Engineering
               </h5>
               <hr>
-              <p>Bring your ideas to life through our rigorous engineering programs. Gain hands-on experience in design, problem-solving and innovation.</p>
-                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <p>Bring your ideas to life through our rigorous engineering programs. Gain hands-on experience in design, problem-solving and innovation.</p>                
+            </div>
+            <div class="card-footer">
+              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
-      </did> <br>
+      </div> <br>
       <div class="row justify-content-center">
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-tittle course-heading">
+              <h5 class="card-tittle courses-section-heading">
                 School of Fashion Technology
               </h5>
               <hr>
-              <p>Unleash your creative flair and master the art of fashion design, textile production, and garment construction. Prepare for a dynamic career in the industry</p>
-                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <p>Unleash your creative flair and master the art of fashion design, textile production, and garment construction. Prepare for a dynamic career in the industry</p>                
+            </div>
+            <div class="card-footer">
+              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-tittle course-heading">
-                School of Nursig
+              <h5 class="card-tittle courses-section-heading">
+                School of Nursing
               </h5>
               <hr>
-              <p>Gain a solid foundation in management, finance, and entrepreneurship. Develop the skills to succeed in the dynamic world of business.</p>
-                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <p>Gain a solid foundation in management, finance, and entrepreneurship. Develop the skills to succeed in the dynamic world of business.</p>                
+            </div>
+            <div class="card-footer">
+              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
-        <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" alt="">
+        <div class="col-md-3">
+          <div class="card h-100">
+            <img src="{% static 'images/IMMACULACULATE NEXUS (1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
-              <h5 class="card-tittle course-heading">
+              <h5 class="card-tittle courses-section-heading">
                 Computer Packages
               </h5>
               <hr>
@@ -226,8 +228,10 @@
                 2.Web Development<br>
                 3.Programming & Coding<br>
                 4.Database Management<br>
-                5.Cybersecurity<br></p>
-                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+                5.Cybersecurity<br></p>               
+            </div>
+            <div class="card-footer">
+              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
@@ -237,9 +241,7 @@
 
   <!-- -----events----- -->
   <style>
-    .facilities{
-        background-color: #736f6f;
-    }
+    
     </style>
   <section class="facilities text-white">
     <h1>Immaculate Nexus Events</h1>
