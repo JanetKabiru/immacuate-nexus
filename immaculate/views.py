@@ -72,3 +72,6 @@ def admissions(request):
 
 def about(request):
     return render(request,'about.html')
+
+def business(request):
+    return render(request,'business.html')
