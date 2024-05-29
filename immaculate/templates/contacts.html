@@ -1,102 +1,19 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IMMACULATE NEXUS TRAINING COLLEGE</title>
-
-  <!-- ---css--- -->
-  <link rel="stylesheet" href="INTC.css">
-
-  <!-- --google font-- -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- ---description check links--- -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@1.5.0/font/bootstrap-icons.css">
-
-  <!-- ---boxicon link-- -->
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-</head>
-
-<body>
-  <header>
-    <div id="topbar" class="primary-color align-items-center pt-2 pb-2 text-dark
-      d-none d-lg-flex">
-      <div class="container">
-        <div class="row left-info">
-          <div class="col-lg-8 text-start">
-            <span class="top-header-span me-3 pt-2"> <i class="bi bi-geo-alt-fill mx-1"></i> KIRINYAGA COUNTY</span>
-            <span class="me-3 top-header-span"> <i class="bi bi-telephone-alt-fill mx-1"></i> +254 701797933 / +254
-              720478382</span>
-            <span><a href="" class="me-3"><button class="btn btn-light btn-sm top-header-span"><i
-                    class="bi bi-telephone-fill me-1"></i>Contact Us</button></a></span>
-          </div>
-          <div class="col-lg-4 text-center col-sm-6 text-lg-end">
-            <a href="" class="me-3"> <button class="btn btn-light btn-sm top-header-span"><i
-                  class="bi bi-telephone-fill mx-1"></i> Apply</button></a>
-            <a href="" class="text-white me-3 fw-bold"><i class="bi bi-download"></i></a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </header>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img height="120px" src="INTC IMAGES/logo.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-1 mb-lg-0 text-uppercase">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ABOUT.html">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="COURSES.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Courses
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Diploma Courses</a></li>
-              <li><a class="dropdown-item" href="#">Certificate Courses</a></li>
-              <li><a class="dropdown-item" href="#">Artisan Courses</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ADMISSIONS.html">Admissions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="EVENTS.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Contacts</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control ms-2" type="search" placeholder="Search" aria-label="Search">
-        </form>
-      </div>
-    </div>
-  </nav>
-
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block content %}
+{% include 'navbar.html' %}
+<script>
+  // JavaScript code to add 'active' class to the element with ID 'home-nav'
+  const homeNav = document.getElementById('contacts-nav');
+  if (homeNav) {
+      homeNav.classList.add('active');
+      console.log("Add class");
+  }
+</script>
   <section class="contactholder">
    <div class="contact">
+    <br />
     <h1>CONTACT US</h1>
     <p>For any questions or inquiries, feel free to reach out for assistance.
       Also check for relevant responses on the FAQs section on 
@@ -104,99 +21,99 @@
          About Us </a>
     </p>
     <div class="row" style="width: 100%;">
-      <div class="col-md-6 contact-col">
+      <div class="col-lg-6 contact-col">
         <div class="row">
-          <div class="col-md-3"></div>                
-          <div class="col-md-9">                                            
-            <form class="contact-form" action="" method="POST">  
+          <div class="col-lg-3"></div>                
+          <div class="col-lg-9">                                            
+            <form class="contact-form" data-url="{{ request.build_absolute_uri|safe }}" method="POST">  
+              {% csrf_token %}
               <div class="mb-3">
                 <label for="fullNameInput" class="form-label">Full Name</label>
-                <input type="text" class="form-control" name="contact-name" id="fullNameInput" required aria-required="true">                        
+                {% render_field form.full_name class="form-control" name="contact-name" id="fullNameInput" required="True"  %}        
+                <!-- <input type="text" class="form-control" name="contact-name" id="fullNameInput" required aria-required="true">                         -->
               </div>
               <div class="mb-3">
                 <label for="emailInput" class="form-label">Email</label>
-                <input type="email" class="form-control" name="contact-email" id="emailInput" aria-describedby="emailHelp" required aria-required="true">                        
+                {% render_field form.email class="form-control" name="contact-email" id="emailInput" aria-describedby="emailHelp"  required="True" %}                        
+                <!-- <input type="email" class="form-control" name="contact-email" id="emailInput" aria-describedby="emailHelp" required aria-required="true">                         -->
               </div>    
               <div class="mb-3">
-                <label for="emailInput" class="form-label">Subject</label>
-                <input type="email" class="form-control" name="contact-email" id="emailInput" aria-describedby="emailHelp" required aria-required="true">                        
+                <label for="subjectInput" class="form-label">Subject</label>
+                {% render_field form.subject class="form-control" name="contact-email" id="subjectInput" aria-describedby="subjectHelp" required="True" %}       
+                <!-- <input type="email" class="form-control" name="contact-email" id="emailInput" aria-describedby="emailHelp" required aria-required="true">                         -->
               </div>                 
               <div class="mb-3 form-floating">
-                <textarea class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required aria-required="true"></textarea>
+                {% render_field form.message class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2" required="True" %}
+                <!-- <textarea class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required aria-required="true"></textarea> -->
                 <label for="floatingTextarea2">What's on you mind?</label>
-              </div>
+              </div>                
               <button type="submit" class="btn blue-btn">SEND</button>
             </form>                                 
           </div>
         </div>
       </div>
-  </section>
-
- 
-
-  
-
-
-
-  <!-- --footer-- -->
-  <footer class="mt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <hr style="width: 60px; background-color: #8e2424;">
-          <img src="INTC IMAGES/IMMACULACULATE NEXUS (1).jpg" width="40.5%" height="62%" alt=""> <br><br>
-          <div class="icons">
-            <a href="#"><i class="bx bxl-facebook-circle"></i></a>
-            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="#"><i class='bx bxl-tiktok' ></i></a>
-            <a href="#"><i class="bx bxl-youtube"></i></a>
+      <div class="col-lg-6">  
+        <div class="container" style="width: 100%;">
+          <div class="row" style="margin-top: 100px; flex: 0 0 auto;">
+            <div class="col-2 col-lg-2 contacts-section-1">                                    
+              <div class="container contacts-icon-holder">
+                <i class="bx bxs-map-pin contacts-icon"></i>
+              </div>                
+            </div>
+            <div class="col-10 col-lg-10 contacts-text">
+              <h5>Location:</h5>
+              <h6>Kianguenyi, Kirinyaga County</h6>
+            </div>
+          </div>
+          <br /> <br />      
+          <div class="row" style="flex: 0 0 auto;">
+            <div class="col-2 col-lg-2 contacts-section-1">            
+              <div class="container contacts-icon-holder">
+                <i class="bx bxs-phone contacts-icon"></i>            
+              </div>
+            </div>              
+            <div class="col-10 col-lg-10 contacts-text">
+              <h5>Phone:</h5>
+              <h6>+254701 797 933 /+254720 478 382 </h6>
+            </div>
+          </div>
+          <br /> <br />
+          <div class="row" style="flex: 0 0 auto;">
+            <div class="col-2 col-lg-2 contacts-section-1">
+              <div class="container contacts-icon-holder">              
+                <i class="bx bxs-envelope contacts-icon"></i>  
+              </div>
+            </div>
+            <div class="col-10 col-lg-10 contacts-text">
+              <h5>Email:</h5>
+              <h6>immaculatenexustechnicals@gmail.com</h6>
+            </div>
+          </div>
+          <br /> <br />
+          <div class="icons-row row">
+            <div class="col d-none d-sm-block"></div>          
+            <div class="col-2" style="text-align: center;">
+              <a href="https://web.facebook.com/profile.php?id=61559038852920" target="_blank" style="color:#1877F2;"><i class="bx bxl-facebook-circle"></i></a>
+            </div>
+            <div class="col-2" style="text-align: center;">
+              <a href="https://www.instagram.com/immaculate.nexus.college/" target="_blank"><span class="instagram"><span class="fa fa-instagram"></span></span></a>
+            </div>
+            <div class="col-2" style="text-align: center;">
+              <a href="https://www.tiktok.com/@immaculatenexustcollege" target="_blank"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+            <div class="col-2" style="text-align: center;">
+              <a href="https://www.youtube.com/@ImmaculateNexusTrainingCollege" target="_blank"><i class="bx bxl-youtube" style="color:#FF0000;"></i></a>
+            </div>
+            <div class="col d-none d-sm-block"></div>                                        
           </div>
         </div>
-         <div class="col-md-4">
-          <br> <br> <h4>Links</h4>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Admission</a></li>
-          <li><a href="#">Events</a></li>
-         </div>
-         <div class="col-md-4">
-            <h4></h4>
-            <br> <br> <li><a href="#">Application letter</a></li>
-            <li><a href="#">Map</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">FAQs</a></li>
-          </div>
+        
       </div>
     </div>
-  </footer>
-
-  <!-- <footer class="mt-5 pb-5">
+    <br>
     <div class="container">
-    <div class="row">
-      <div class="col">
-        <p>Immaculate Nexus Training College is a <br>
-          prestigious institution dedicated to  <br>
-          providing exceptional educational  <br>
-          opportunities. Nestled in a serene  <br>
-          campus, our college offers a  <br>
-          transformative learning experience  <br>
-          that prepares students for <br>
-          a bright future. <br>
-          </p>
-      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6937128777167!2d37.29066757496469!3d-0.4528289995427291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18287f81514be303%3A0xcfa446d188180fff!2sImmaculate%20Nexus%20Training%20College!5e0!3m2!1sen!2ske!4v1715525305180!5m2!1sen!2ske" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    </div>
-  </footer> -->
-
-
-
-  <!-- Bootstrap JAVASCRIPT -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-</body>
-
-</html>
+  </section> 
+{% include 'footer.html' %}
+{% endblock %}

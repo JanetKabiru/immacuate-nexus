@@ -1,6 +1,16 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}                     
+{% include 'navbar.html' %}
 {{block.super}}
+<script>
+  // JavaScript code to add 'active' class to the element with ID 'home-nav'
+  const homeNav = document.getElementById('events-nav');
+  if (homeNav) {
+      homeNav.classList.add('active');
+      console.log("Add class");
+  }
+</script>
   <section class="sub-header">
     <div class="container">
       <div class="row">
@@ -56,8 +66,6 @@
     </div>
   </section>
 
-
-
   <!-- --contact us-- -->
   <section class="contact-adm pt-5 pt-5">
     <div class="container">
@@ -91,7 +99,7 @@
       </div>
     </div>
   </section>
-
+  {% include 'footer.html' %}
 {% endblock %}  
 
 
