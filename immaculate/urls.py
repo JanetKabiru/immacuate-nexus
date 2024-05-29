@@ -12,6 +12,7 @@ urlpatterns=[
     re_path('^courses$',views.courses,name = 'courses'),
     re_path('^admissions$',views.admissions,name = 'admissions'),
     re_path('^about$',views.about,name = 'about'),
+    re_path('^business',views.business,name = 'business'),
 ]
 
 if settings.DEBUG:
