@@ -7,6 +7,7 @@
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3" }
     },
+    
     {
       "src": "build_files.sh",
       "use": "@vercel/static-build",
@@ -24,5 +25,8 @@
       "src": "/(.*)",
       "dest": "nexus/wsgi.py"
     }
-  ]
+  ],
+  "env": {
+    "PYTHONPATH": "nexus"
+  }
 }
