@@ -1,25 +1,20 @@
-
 {
   "version": 2,
   "builds": [
     {
       "src": "nexus/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", 
-        "runtime": "python3.9" 
-      }
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3" }
     },
     
     {
       "src": "build_files.sh",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "staticfiles",
-        "buildCommand": "sh build_files.sh"
+        "distDir": "staticfiles"
       }
     }
   ],
- 
   "routes": [
     {
       "src": "/static/(.*)",
