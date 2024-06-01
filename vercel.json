@@ -18,11 +18,7 @@
       }
     }
   ],
-  "routes": [
-    {
-      "src": "/static/(.*)",
-      "dest": "/staticfiles/$1"
-    },
+  "routes": [    
     {
       "src": "/(.*)",
       "dest": "nexus/wsgi.py"
