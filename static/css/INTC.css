@@ -223,7 +223,6 @@ li{
 .sub-header {
   height: 50vh!important;
   width: 100%!important;
-  /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/pexels-pixabay-256559.jpg); */
   background-position: center top!important;
   background-size: cover!important;
   color: #fff!important;
