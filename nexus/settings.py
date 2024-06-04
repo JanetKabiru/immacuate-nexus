@@ -151,13 +151,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #         },
 # }
 
-
-STORAGES = {    
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
-    },
-}
-
 EMAIL_HOST= os.getenv("EMAIL_HOST", default="") 
 EMAIL_PORT= os.getenv("EMAIL_PORT", default="") 
 EMAIL_HOST_USER= os.getenv("EMAIL_HOST_USER", default="") 
