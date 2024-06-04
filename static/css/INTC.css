@@ -119,7 +119,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background: linear-gradient(#80030352, #80030314);
+  background: linear-gradient(#5858586e, #58585832);
 }
 .hero .carousel-item .carousel-container{
   display: flex;
@@ -237,6 +237,13 @@ footer a {
 li{
   list-style: none;
   margin-bottom: 5px;
+}
+.footer-img {
+  width: 40.5%;
+  height: 62%;
+}
+.footer-icons {
+  font-size: 25px;
 }
 
 /* -----INTC ABOUT PAGE---- */
@@ -392,7 +399,7 @@ h3{
   align-items: center;
   flex-wrap: wrap;
 }
-.bxl-tiktok {
+.icons-row .bxl-tiktok {
   color: #111111;        
   filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
 }
@@ -508,5 +515,26 @@ h3{
   
   .hero .carousel-item img{  
     height: 420px;
+  }
+
+  .enroll { 
+    margin: 20px auto !important;
+    width: 90% !important;
+  }
+
+  .enroll h1 {
+    font-size: 20px;
+  }
+
+  .footer-img {
+    margin-left: 27%;
+  }
+
+  .footer-icons {
+    text-align: center;
+  }
+
+  .footer-icons a {
+    padding: 0 10px;
   }
 }
