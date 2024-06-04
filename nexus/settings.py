@@ -10,9 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
-
 import dj_database_url
-
 from pathlib import Path
 # import environ
 
@@ -153,6 +151,12 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #         },
 # }
 
+
+STORAGES = {    
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 EMAIL_HOST= os.getenv("EMAIL_HOST", default="") 
 EMAIL_PORT= os.getenv("EMAIL_PORT", default="") 
