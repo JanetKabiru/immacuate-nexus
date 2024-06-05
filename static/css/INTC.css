@@ -35,6 +35,20 @@
   color: var(--PrimaryColor)!important;
   font-weight: 400!important;
 }
+.bxs-map-pin {
+  font-size: 20px;
+  margin-top: 3px;
+}
+.bxs-map-text {
+  font-size: 14px;
+}
+.bxs-phone {
+  font-size: 20px;
+  margin-top: 3px;
+}
+.bxs-phone-text {
+  font-size: 14px;
+}
 
 /* Home page */
 .about-section h2 {
@@ -44,6 +58,7 @@
 .about-section-left-info {
   background-color: #5a05056d;  
   padding: 40px 60px !important;
+  margin-left: 20px;
 }
 .about-section-img {
   width: 500px; 
@@ -73,11 +88,9 @@
   font-size: 14px;
 }
 
-.facilities{
-  background-color: #736f6f;
-}
-.facilities{
-  width: 80;
+.facilities {
+  background-color: #736f6f; 
+  width: 100%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -92,7 +105,7 @@
   width: 100%;
   border-radius: 10px;
 }
-.facilities-col P{
+.facilities-col p{
   padding: 0;
 }
 .facilities-col h3{
@@ -119,7 +132,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background: linear-gradient(#5858586e, #58585832);
+  background: linear-gradient(#39393989, #3939394d);
 }
 .hero .carousel-item .carousel-container{
   display: flex;
@@ -245,11 +258,44 @@ li{
 .footer-icons {
   font-size: 25px;
 }
+.footer-icons a {
+  padding: 0 5px;
+}
 
 /* -----INTC ABOUT PAGE---- */
 .student-life h1{
   position: center;
 }
+.about-landing{
+  margin: 10px auto;
+  width: 100%;
+  height: 600px;  
+  text-align: center;
+  padding: 200px 0;
+}
+.container-mission{
+  border-radius: 10px;
+  text-align: center;
+  padding: 50px;
+  background-color: #e7dcdc; 
+  /* height: 200px;  */
+  text-align: center;   
+  margin-top: 25px;
+}
+
+.student-life {
+  padding: 80px 0;
+}
+
+.student-organizations {
+  margin-top: 50px;
+}
+
+.academic-support {
+  margin-top: 20px;
+  margin-left: -10px;
+}
+
 
 /* IINTC ADMISSIONS PAGE */
 .sub-header {
@@ -396,8 +442,14 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; 
+  gap: 35px;
 }
+
+.icons-row a {
+  text-decoration: none; 
+}
+
 .icons-row .bxl-tiktok {
   color: #111111;        
   filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
@@ -501,11 +553,24 @@ h3{
   }
 }
 
-@media only screen and (max-width: 320px) {
+/* @media only screen and (max-width: 376px) {
   .about-section-img {
     width: 250px;
     height: 250px;
-    margin-left: -35%;
+    margin-left: -10%;
+  }
+
+  .about-section-left-info {
+
+  }
+} */
+
+@media only screen and (max-width: 435px) {
+  .navbar-brand {
+    height: 90px;
+  }
+  .navbar-brand img {
+    height: 90px;
   }
 
   .hero .carousel-heading-topics {
@@ -514,6 +579,74 @@ h3{
   
   .hero .carousel-item img{  
     height: 420px;
+  }
+
+  .about-section-left-info {
+    padding: 10px 30px !important;
+    margin-left: 0;
+  }
+
+  .about-section-left-info h2 {
+    font-size: 23px;
+  }
+
+  .about-section-left-info h5 {
+    font-size: 18px;
+  }
+
+  .about-section-left-info p {
+    font-size: 13px;
+  }
+
+  .about-section-img {
+    width: 110%;
+    height: auto;
+    margin-left: -10%;
+  }
+
+  .courses-section h2 {
+    font-size: 23px;
+  }
+
+  .courses-section img {
+    height: 150px;
+    width: 135px;
+  }
+
+  .courses-section-heading {
+    font-size: 18px;
+    margin-top: -15px;
+    text-align: center;
+    height: 30px;
+  }
+
+  .courses-section p {
+    font-size: 13px;
+  }
+  
+  .facilities {
+    padding-top: 15px;
+  }
+
+  .facilities h1 {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+
+  .facilities h3 {
+    font-size: 18px;    
+  }
+
+  .facilities p {
+    font-size: 13px;    
+  }
+
+  .facilities button {
+    font-size: 15px;   
+  }
+
+  .facilities-col {   
+    padding: 30px;
   }
 
   .enroll { 
@@ -525,15 +658,16 @@ h3{
     font-size: 20px;
   }
 
-  .footer-img {
-    margin-left: 27%;
-  }
-
-  .footer-icons {
+  .footer {
     text-align: center;
-  }
+  } 
 
   .footer-icons a {
     padding: 0 10px;
+  }
+
+  .about-landing{    
+    height: 420px;      
+    padding: 100px 0;
   }
 }
