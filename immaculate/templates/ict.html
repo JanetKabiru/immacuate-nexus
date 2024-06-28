@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}                     
+{% include 'navbar.html' %}
+{{block.super}}
+  <script>
+    // JavaScript code to add 'active' class to the element with ID 'home-nav'
+    const homeNav = document.getElementById('courses-nav');
+    if (homeNav) {
+        homeNav.classList.add('active');
+        console.log("Add class");
+    }
+  </script>
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Course</th>
+        <th scope="col">Entry Level</th>
+        <th scope="col">Duration</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Diploma in Information Communication Technology</td>
+        <td>C - </td>
+        <td>2 Years</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Diploma in Computer Application</td>
+        <td>C - </td>
+        <td>1 Year</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Diploma in Software Engineering</td>
+        <td>C - </td>
+        <td>1 Year</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Certificate in Information Communication Technology</td>
+        <td>D </td>
+        <td>1 Year</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Certificate in Software Engineering</td>
+        <td>D </td>
+        <td>6 Months</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Certificate in Web Design</td>
+        <td>Open </td>
+        <td>3 Months</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Certificate in Graphic Design</td>
+        <td>Open </td>
+        <td>3 months</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Certificate in Photoshop/ illustrator</td>
+        <td>Open </td>
+        <td>2 weeks</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  {% include 'footer.html' %}
+{% endblock %}  

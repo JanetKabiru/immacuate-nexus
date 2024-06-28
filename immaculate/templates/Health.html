@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}                     
+{% include 'navbar.html' %}
+{{block.super}}
+  <script>
+    // JavaScript code to add 'active' class to the element with ID 'home-nav'
+    const homeNav = document.getElementById('courses-nav');
+    if (homeNav) {
+        homeNav.classList.add('active');
+        console.log("Add class");
+    }
+  </script>
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Course</th>
+        <th scope="col">Entry Level</th>
+        <th scope="col">Duration</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Diploma in Nursing</td>
+            <td>C - </td>
+            <td>2 Years</td>
+            <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+          </tr>
+      <tr>
+        <td>Diploma in Community Development & Social Work</td>
+        <td>C - </td>
+        <td>2 Years</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Diploma in Community Health & Development</td>
+        <td>C - </td>
+        <td>2 Years</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Diploma in Community Records & IT</td>
+        <td>C - </td>
+        <td>2 Years</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Diploma in Community Health Assistant</td>
+        <td>C - </td>
+        <td>2 Years</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Certified Nurse Assistant</td>
+        <td>D </td>
+        <td>1 Year</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Certificate in Community Health Assistant</td>
+        <td>D </td>
+        <td>1 Year</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Certificate in Community Records & IT</td>
+        <td>D </td>
+        <td>1 Year</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Certificate in Health Service Support</td>
+        <td>D </td>
+        <td>1 Year</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Certificate in Community Development & Social Work</td>
+        <td>D </td>
+        <td>1 Year</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Artisan in Community in Development & Social Work</td>
+        <td>D </td>
+        <td>1 Year</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Artisan in Community Health</td>
+        <td>D </td>
+        <td>1 Year</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+      <tr>
+        <td>Artisan in Health Service</td>
+        <td>D </td>
+        <td>1 Year</td>
+        <td><a href="" class="btn btn-outline-dark">Apply<i class="bi bi-arrow-right-circle-fill"></i> </a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  {% include 'footer.html' %}
+{% endblock %}  

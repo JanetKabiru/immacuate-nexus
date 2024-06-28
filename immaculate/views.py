@@ -75,3 +75,18 @@ def about(request):
 
 def business(request):
     return render(request,'business.html')
+
+def ict(request):
+    return render(request,'ict.html')
+
+def health(request):
+    return render(request,'health.html')
+
+def counselling(request):
+    return render(request,'counselling.html')
+
+def engineering(request):
+    return render(request,'engineering.html')
+
+def fashion(request):
+    return render(request,'fashion.html')

@@ -12,7 +12,15 @@ urlpatterns=[
     re_path('^courses$',views.courses,name = 'courses'),
     re_path('^admissions$',views.admissions,name = 'admissions'),
     re_path('^about$',views.about,name = 'about'),
-    re_path('^business',views.business,name = 'business'),
+    re_path('^business$',views.business,name = 'business'),
+    re_path('^ict$',views.ict,name = 'ict'),
+    re_path('^health$',views.health,name = 'health'),
+    re_path('^counselling$',views.counselling,name = 'counselling'),
+    re_path('^engineering$',views.engineering,name = 'engineering'),
+    re_path('^fashion$',views.fashion,name = 'fashion'),
+
+
+
 ]
 
 if settings.DEBUG:
