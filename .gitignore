@@ -1,3 +1,4 @@
-.virtual
-virtual/
 .env
+env/
+.env
+virtual
