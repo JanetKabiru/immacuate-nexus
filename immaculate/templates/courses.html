@@ -67,107 +67,121 @@
         color: #ffffff;
       }
     </style>
-  <section class="about-section pt-5 pb-5" >
+  <section class="about-section courses-section pt-5 pb-5" >
     <div class="container">
       <div class="text-center pb-4">
         <h2 class="fw-bold">Academic Programs</h2>
       </div>
       <did class="row">
         <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE_NEXUS_(1).jpg" alt="">
+          <div class="card h-70">
+            <img src="{% static 'images/IMMACULACULATE_NEXUS_(1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Business
               </h5>
               <hr>
-              <p>Gain a solid foundation in management, finance, and entrepreneurship. Develop the skills to succeed in the dynamic world of business.</p>
-                <a href="{% url 'business' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <p>Gain a solid foundation in management, finance, and entrepreneurship. Develop the skills to succeed in the dynamic world of business.</p>                            
             </div>
+            <div class="card-footer">
+              <a href="{% url 'business' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+            </div>  
           </div>
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE_NEXUS_(1).jpg" alt="">
+          <div class="card h-70">
+            <img src="{% static 'images/IMMACULACULATE_NEXUS_(1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Information Computer Technology
               </h5>
               <hr>
-              <p>Stay ahead of the curve with our cutting-edge programs in computer science, data analysis and digital innovation. Become a tech-savvy problem-solver.</p>
-                <a href="{% url 'ict' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <p>Stay ahead of the curve with our cutting-edge programs in computer science, data analysis and digital innovation. Become a tech-savvy problem-solver.</p>              
             </div>
+            <div class="card-footer">
+              <a href="{% url 'ict' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+            </div>                
           </div>
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE_NEXUS_(1).jpg" alt="">
+          <div class="card h-70">
+            <img src="{% static 'images/IMMACULACULATE_NEXUS_(1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
-                School of Health $ Social Services
+                School of Health & Social Services
               </h5>
               <hr>
-              <p>Transform lives and communities with our comprehensive programs in healthcare, social work, and public health. Become a compassionate leader dedicated to improving health and well-being.</p>
-                <a href="{% url 'health' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <p>Transform lives and communities with our comprehensive programs in healthcare, social work, and public health. Become a compassionate leader dedicated to improving health and well-being.</p>                              
+            </div>
+            <div class="card-footer">
+              <a href="{% url 'health' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE_NEXUS_(1).jpg" alt="">
+          <div class="card h-70">
+            <img src="{% static 'images/IMMACULACULATE_NEXUS_(1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Engineering
               </h5>
               <hr>
-              <p>Bring your ideas to life through our rigorous engineering programs. Gain hands-on experience in design, problem-solving and innovation.</p>
-                <a href="{% url 'engineering' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <p>Bring your ideas to life through our rigorous engineering programs. Gain hands-on experience in design, problem-solving and innovation.</p>                
+            </div>
+            <div class="card-footer">
+              <a href="{% url 'engineering' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
       </did> <br>
       <div class="row justify-content-center">
         <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE_NEXUS_(1).jpg" alt="">
+          <div class="card h-70">
+            <img src="{% static 'images/IMMACULACULATE_NEXUS_(1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Fashion Technology
               </h5>
               <hr>
-              <p>Unleash your creative flair and master the art of fashion design, textile production, and garment construction. Prepare for a dynamic career in the industry</p>
-                <a href="{% url 'fashion' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <p>Unleash your creative flair and master the art of fashion design, textile production, and garment construction. Prepare for a dynamic career in the industry</p>                             
             </div>
+            <div class="card-footer">
+              <a href="{% url 'fashion' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+            </div> 
           </div>
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE_NEXUS_(1).jpg" alt="">
+          <div class="card h-70">
+            <img src="{% static 'images/IMMACULACULATE_NEXUS_(1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 School of Counselling and Psychology
               </h5>
               <hr>
-              <p>Explore the human mind and learn how to support others. Develop empathy, communication skills and evidence-based therapeutic approaches</p>
-                <a href="{% url 'counselling' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <p>Explore the human mind and learn how to support others. Develop empathy, communication skills and evidence-based therapeutic approaches</p>                             
             </div>
+            <div class="card-footer">
+              <a href="{% url 'counselling' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+            </div> 
           </div>
         </div>
         <div class="col-md-3 mb-2 mb-lg-0">
-          <div class="card">
-            <img src="INTC IMAGES/IMMACULACULATE_NEXUS_(1).jpg" alt="">
+          <div class="card h-70">
+            <img src="{% static 'images/IMMACULACULATE_NEXUS_(1).jpg' %}" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-tittle course-heading">
                 Computer Packages
               </h5>
               <hr>
-              <p>1.Office Productivity<br>
-                2.Web Development<br>
-                3.Programming & Coding<br>
-                4.Database Management<br>
-                5.Cybersecurity<br></p>
-                <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+                <p>1.Office Productivity<br />
+                2.Web Development<br />
+                3.Programming & Coding<br />
+                4.Database Management<br />
+                5.Cybersecurity</p>                           
             </div>
+            <div class="card-footer">
+              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+            </div>   
           </div>
         </div>
       </div>
