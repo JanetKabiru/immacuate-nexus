@@ -9,7 +9,7 @@
         console.log("Add class");
     }
   </script>
-  <section class="hero" style="width: 100%;">
+   <section class="hero" style="width: 100%;">
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -23,7 +23,7 @@
           <div class="carousel-container">
             <div class="carousel-topics container">
               <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
-              <p>MAY 2024 INTAKE ONGOING</p>
+              <p>SEPTEMBER 2024 INTAKE ONGOING</p>
               <div>
                 <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
               </div>
@@ -35,7 +35,7 @@
           <div class="carousel-container">
             <div class="carousel-topics container">
               <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
-              <p>MAY 2024 INTAKE ONGOING</p>
+              <p>SEPTEMBER 2024 INTAKE ONGOING</p>
               <div>
                 <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
               </div>
@@ -47,7 +47,7 @@
           <div class="carousel-container">
             <div class="carousel-topics container">
               <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
-              <p>MAY 2024 INTAKE ONGOING</p>
+              <p>SEPTEMBER 2024 INTAKE ONGOING</p>
               <div>
                 <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
               </div>
@@ -59,7 +59,7 @@
           <div class="carousel-container">
             <div class="carousel-topics container">
               <h1 class="carousel-heading-topics"><span>IMMACULATE NEXUS TRAINING COLLEGE</span></h1>
-              <p>MAY 2024 INTAKE ONGOING</p>
+              <p>SEPTEMBER 2024 INTAKE ONGOING</p>
               <div>
                 <button class="btn btn-outline-light">Enroll Now <i class="bi bi-arrow-right-circle-fill"></i></button>
               </div>
@@ -87,35 +87,35 @@
     } */
     </style>
 
-  <section class="about-section text-white">
-    <div class="container about-section-info">
-      <div class="row">
-        <div class="col-md-8 about-section-left-info">  
-          <div class="row">
-            <div class="col-lg-10">
-              <h2 class="fw-bold heading">Empowering tomorrow</h2>          
-              <h5>Holistic Education</h5>
-              <p>Our programs blend theoretical knowledge with practical applications, empowering students to tackle real-world challenges</p>
-              <h5>Future-Ready Skills</h5>
-              <p>We equip students with the essential skills and tools needed to thrive in the rapidly evolving job market.</p>
-              <h5>Transformative Experience</h5>
-              <p>Through our immersive learning environment, students embark on a transformative journey of personal and professional growth.</p>
-              <div>
-                <br>
-                <button class="btn btn-outline-light">Read More <i class="bi bi-arrow-right-circle-fill"></i></button>
-              </div>
+<section class="about-section text-white">
+  <div class="container about-section-info">
+    <div class="row">
+      <div class="col-md-8 about-section-left-info">  
+        <div class="row">
+          <div class="col-lg-10">
+            <h2 class="fw-bold heading">Empowering tomorrow</h2>          
+            <h5>Holistic Education</h5>
+            <p>Our programs blend theoretical knowledge with practical applications, empowering students to tackle real-world challenges</p>
+            <h5>Future-Ready Skills</h5>
+            <p>We equip students with the essential skills and tools needed to thrive in the rapidly evolving job market.</p>
+            <h5>Transformative Experience</h5>
+            <p>Through our immersive learning environment, students embark on a transformative journey of personal and professional growth.</p>
+            <div>
+              <br>
+              <button class="btn btn-outline-light">Read More <i class="bi bi-arrow-right-circle-fill"></i></button>
             </div>
-            <div class="col-lg-2">
-              <div class="container user-img">
-                <img src="{% static 'images/library.jpg' %}" class="rounded about-section-img "  alt="">  
-              </div>              
-            </div>
-          </div>                  
-        </div>
-        <div class="col-md-4 about-section-right-info"></div>          
+          </div>
+          <div class="col-lg-2">
+            <div class="container user-img">
+              <img src="{% static 'images/library.jpg' %}" class="rounded about-section-img "  alt="">  
+            </div>              
+          </div>
+        </div>                  
       </div>
+      <div class="col-md-4 about-section-right-info"></div>          
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- --schools-- -->
   <section class="courses-section pt-5 pb-5">
@@ -135,7 +135,7 @@
               <p>Gain a solid foundation in management, finance, and entrepreneurship. Develop the skills to succeed in the dynamic world of business.</p>                
             </div>
             <div class="card-footer">
-              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <a href="{% url 'business' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@
               <p>Stay ahead of the curve with our cutting-edge programs in computer science, data analysis and digital innovation. Become a tech-savvy problem-solver.</p>                
             </div>
             <div class="card-footer">
-              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <a href="{% url 'ict' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
@@ -165,7 +165,7 @@
               <p>Explore the human mind and learn how to support others. Develop empathy, communication skills and evidence-based therapeutic approaches</p>                
             </div>
             <div class="card-footer">
-              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <a href="{% url 'counselling' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@
               <p>Bring your ideas to life through our rigorous engineering programs. Gain hands-on experience in design, problem-solving and innovation.</p>                
             </div>
             <div class="card-footer">
-              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <a href="{% url 'engineering' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
@@ -197,7 +197,7 @@
               <p>Unleash your creative flair and master the art of fashion design, textile production, and garment construction. Prepare for a dynamic career in the industry</p>                
             </div>
             <div class="card-footer">
-              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <a href="{% url 'fashion' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>
@@ -212,7 +212,7 @@
               <p>Gain a solid foundation in management, finance, and entrepreneurship. Develop the skills to succeed in the dynamic world of business.</p>                
             </div>
             <div class="card-footer">
-              <a href="" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
+              <a href="{% url 'health' %}" class="btn btn-outline-dark">See More <i class="bi bi-arrow-right-circle-fill"></i> </a>
             </div>
           </div>
         </div>

@@ -1,0 +1,48 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block content %} 
+{% include 'navbar.html' %}
+{{block.super}}
+<script>
+    // JavaScript code to add 'active' class to the element with ID 'home-nav'
+    const homeNav = document.getElementById('about-nav');
+    if (homeNav) {
+        homeNav.classList.add('active');
+        console.log("Add class");
+    }
+  </script>
+  <style>
+    .row-empowering{
+        width: 80%;
+        max-width: 1179px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:50px;
+        overflow-x: hidden;
+        padding: 5rem 0;
+    }
+    .row-empowering .imgWrapper{
+        overflow: hidden;
+    }
+  </style>
+<section>
+    <div class="row-empowering">
+        <div class="imgWrapper">
+            <img src="{% static 'images/computer_lab.jpg' %}" alt="" style="width: 100%; height: 100% object-fit: cover;">
+        </div>
+        <div class="contentWrapper">
+            <div class="content">
+                <span>
+                    <span>Empowering Tomorrow</span>
+                </span>
+                <h2>Holistic Education</h2>
+                <p>Our programs are designed to provide a well-rounded education. Students engage in a variety of learning activities that go beyond the classroom, including research projects, community service, and extracurricular activities. This holistic approach helps students develop critical thinking, creativity, and a global perspective, preparing them to make meaningful contributions to society.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% include 'footer.html' %} 
+{% endblock %}
