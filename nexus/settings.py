@@ -33,8 +33,10 @@ SECRET_KEY = os.getenv("SECRET_KEY", default="")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", default="")
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh','localhost','immaculatenexuscollege.or.ke','127.0.0.1']
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
 
+# Ensure ALLOWED_HOSTS is set correctly
+ALLOWED_HOSTS = [host.strip() for host in ALLOWED_HOSTS if host]
 
 # Application definition
 
